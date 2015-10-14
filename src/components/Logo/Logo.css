@@ -1,0 +1,32 @@
+@import "../variables.css";
+
+.Logo-img {
+  position: absolute;
+  left: 16.6%;
+  width:4%;
+}
+
+.Logo-container {
+  color: #fff;
+}
+
+.Logo-appName {
+  min-width: 100px;
+  width: 20%;
+}
+
+@keyframes Floating {
+  from {
+    transform: translate(0, -10%);
+  }
+  50% {
+    transform: translate(0, 5%);
+  }
+  to {
+    transform: translate(0, -10%);
+  }
+}
+
+.Logo-floating {
+  animation: Floating 3500ms infinite;
+}

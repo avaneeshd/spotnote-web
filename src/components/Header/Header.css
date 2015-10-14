@@ -3,17 +3,19 @@
 @import '../variables.css';
 
 :root {
-  --brand-color: #61dafb;
+  --brand-color: #17D26C;
 }
 
 .Header {
-  background: #373277;
+  width: 100%;
+  z-index: 1;
   color: #fff;
+  background: #17D26C;
 }
 
 .Header-container {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   max-width: var(--max-content-width);
 }
 

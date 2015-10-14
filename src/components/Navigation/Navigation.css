@@ -32,3 +32,8 @@
 .Navigation-spacer {
   color: rgba(255, 255, 255, .3);
 }
+
+.Navigation-items{
+  position: relative;
+  display: inline-block;
+}

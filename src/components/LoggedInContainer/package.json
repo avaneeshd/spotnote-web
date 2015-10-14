@@ -1,0 +1,6 @@
+{
+  "name": "LoggedInContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LoggedInContainer.js"
+}

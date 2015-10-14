@@ -10,7 +10,8 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
-
+import HomePage from './components/HomePage';
+import ExplorePage from './components/ExplorePage';
 const router = new Router(on => {
 
   on('*', async (state, next) => {
@@ -24,9 +25,14 @@ const router = new Router(on => {
 
   on('/register', async () => <RegisterPage />);
 
+  on('/explore', async () => <ExplorePage />);
+
   on('*', async (state) => {
     const content = await http.get(`/api/content?path=${state.path}`);
-    return content && <ContentPage {...content} />;
+    if(state.path === '/')
+      return content && <HomePage {...content}/>;
+    else
+      return content && <ContentPage {...content} />;
   });
 
   on('error', (state, error) => state.statusCode === 404 ?

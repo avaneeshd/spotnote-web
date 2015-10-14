@@ -3,7 +3,6 @@
 import React from 'react';
 import styles from './Feedback.css';
 import withStyles from '../../decorators/withStyles';
-
 @withStyles(styles)
 class Feedback {
 

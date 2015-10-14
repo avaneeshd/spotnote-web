@@ -1,0 +1,6 @@
+{
+  "name": "ExplorePage",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ExplorePage.js"
+}

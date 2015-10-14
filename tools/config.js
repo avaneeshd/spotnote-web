@@ -65,6 +65,10 @@ const config = {
     extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx']
   },
 
+  externals:[{
+    xmlhttprequest: '{XMLHttpRequest:XMLHttpRequest}'
+  }],
+
   module: {
     loaders: [{
       test: /\.txt/,

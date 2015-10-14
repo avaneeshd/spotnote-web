@@ -1,0 +1,6 @@
+{
+  "name": "SpotNoteDetails",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SpotNoteDetails.js"
+}

@@ -8,6 +8,10 @@ import Router from './Router';
 import Location from './core/Location';
 import ActionTypes from './constants/ActionTypes';
 import { addEventListener, removeEventListener } from './utils/DOMUtils';
+import Parse from 'parse';
+let APP_ID = "Hzf3GsQkGhxMan2Bc6WdejuFA556kuMjOPRbrK3c";
+let JS_ID = "863biJKqJiqe4xorzaMxy8mKb763kLG5L3m2wFC4";
+Parse.initialize(APP_ID, JS_ID);
 
 const container = document.getElementById('app');
 const context = {
